@@ -120,15 +120,75 @@ hr{
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         width: 100%;
+        flex-direction: column;
     }
-    .courses{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-@media only screen and (max-width:688px) {
     .blogs{
         display: calc(1, 1fr);
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
     }
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-blogs{        
+        display: block;
+        flex-direction: column;
+        justify-self: auto;
+    }
+}
+@media only screen and (max-width:900px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .blogs{
+        display: calc(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-blogs{        
+        display: block;
+        flex-direction: column;
+        justify-self: auto;
+    }
+}
+@media only screen and (max-width:556px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        margin-right: 50px;
+    }
+    .blog{
+        display: calc(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        flex-direction: column;
+    }
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    
+    }
+    .top-blogs{        
+        display: block;
+        flex-direction: column;
+        justify-self: auto;
+    }
+    .top-players{
+        margin-right: 50px;
+
+    }    
 }
